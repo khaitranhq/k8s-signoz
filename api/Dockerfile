@@ -6,7 +6,7 @@ WORKDIR /app
 COPY package.json .
 COPY yarn.lock .
 #Installing all the dependencies
-RUN yarn install
+RUN yarn
 #Copying all the files to the working directory
 COPY . .
 #Container will run on this port
